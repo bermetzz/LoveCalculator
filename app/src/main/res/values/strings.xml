@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LoveCalculator</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="love_calculator">Love Calculator</string>
+    <string name="first_name">first name</string>
+    <string name="second_name">second name</string>
+    <string name="calculate">Calculate</string>
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="try_again">Try Again</string>
+</resources>
