@@ -1,4 +1,4 @@
-package com.example.lovecalculator
+package com.example.lovecalculator.remote
 
 import retrofit2.Call
 import retrofit2.http.GET
@@ -11,7 +11,7 @@ interface LoveApi {
     fun calculatePercentage(
         @Query("fname") firstName: String,
         @Query("sname") secondName: String,
-        @Header("X-RapidAPI-Key") key: String = "b3f81bdf4emshc6c7904b872ebcdp1f8fd0jsn68d1fa434c8a",
+        @Header("X-RapidAPI-Key") key: String = "e4770650edmsh9eea983838b74e5p1e48ccjsnc9fd99ac5795",
         @Header("X-RapidAPI-Host") host: String = "love-calculator.p.rapidapi.com"
     ): Call<LoveModel>
 }
