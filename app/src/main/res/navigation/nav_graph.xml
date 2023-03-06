@@ -15,4 +15,9 @@
         android:name="com.example.lovecalculator.OutputFragment"
         android:label="fragment_output"
         tools:layout="@layout/fragment_output" />
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.example.lovecalculator.onBoarding.OnBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding" />
 </navigation>
