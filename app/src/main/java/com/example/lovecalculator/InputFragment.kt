@@ -50,6 +50,7 @@ class InputFragment : Fragment() {
                 viewModel.getLiveLove(firstEt.text.toString(), secondEt.text.toString())
                     .observe(viewLifecycleOwner, Observer { loveModel ->
                         Log.e("bzz", "initClicker: $loveModel")
+                        App.appDatabase.loveDao().insert(loveModel)
                         findNavController().navigate(
                             R.id.outputFragment,
                             bundleOf(DATA to loveModel)

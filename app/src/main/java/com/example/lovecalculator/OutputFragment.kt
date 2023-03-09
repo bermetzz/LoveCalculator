@@ -35,6 +35,9 @@ class OutputFragment : Fragment() {
             againBtn.setOnClickListener {
                 findNavController().navigateUp()
             }
+            historyBtn.setOnClickListener {
+                findNavController().navigate(R.id.historyFragment)
+            }
         }
     }
 }

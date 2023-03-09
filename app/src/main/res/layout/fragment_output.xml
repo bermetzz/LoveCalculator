@@ -64,5 +64,16 @@
         android:textAllCaps="false"
         android:textSize="22sp"
         android:textStyle="bold" />
-
+    <Button
+        android:id="@+id/historyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/reddy"
+        android:fontFamily="serif-monospace"
+        android:text="@string/_history"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:textStyle="bold" />
 </LinearLayout>
