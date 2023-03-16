@@ -12,10 +12,10 @@ import com.example.lovecalculator.databinding.ItemOnboardingBinding
 
 class OnBoardingAdapter(private val onClick: () -> Unit): Adapter<OnBoardingAdapter.OnBoardingViewHolder>() {
     private val onBoardData = arrayListOf(
-        OnBoard("It's Fun and Many more", "Have a leisure time? Spend it with us, you won't be bored. We promise!", R.drawable.img),
-        OnBoard("Have a good time", "You should take the time to help those who need you", R.drawable.img_1),
-        OnBoard("Cherishing love", "It is now no longer possible for you to cherish love", R.drawable.img),
-        OnBoard("Have a breakup?", "We have made the correction for you. Don't worry, maybe someone is waiting for you!", R.drawable.img_1)
+        OnBoard("It's Fun and Many more", "Have a leisure time? Spend it with us, you won't be bored. We promise!", R.raw.cat),
+        OnBoard("Have a good time", "You should take the time to help those who need you", R.raw.catloader),
+        OnBoard("Cherishing love", "It is now no longer possible for you to cherish love", R.raw.catwriter),
+        OnBoard("Have a breakup?", "We have made the correction for you. Don't worry, maybe someone is waiting for you!", R.raw.cat)
     )
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OnBoardingViewHolder {
@@ -34,7 +34,7 @@ class OnBoardingAdapter(private val onClick: () -> Unit): Adapter<OnBoardingAdap
         fun bind(onBoard: OnBoard) {
             binding.tvTitle.text = onBoard.title
             binding.tvDescription.text = onBoard.description
-            onBoard.image?.let { binding.image.setImageResource(it) }
+            onBoard.image?.let { binding.image.setAnimation(it) }
             binding.btnStart.isVisible = adapterPosition == onBoardData.lastIndex
             binding.btnStart.setOnClickListener{
                 onClick()
